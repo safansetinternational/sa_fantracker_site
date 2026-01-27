@@ -334,6 +334,8 @@ function AboutSection() {
                   <span key={s} className={`px-3 py-1.5 rounded-full text-xs font-medium border ${i % 2 === 0 ? "bg-primary/5 text-primary border-primary/10" : "bg-accent/5 text-accent border-accent/10"}`}>{s}</span>
                 ))}
               </div>
+
+
               <p className="text-sm text-gray-500 italic">
                 Pricing is based on fleet size.{" "}
                 <Link href="/contact" className="text-accent hover:underline font-medium">Contact us</Link>{" "}
