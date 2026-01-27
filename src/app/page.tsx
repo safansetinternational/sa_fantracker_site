@@ -334,11 +334,11 @@ function AboutSection() {
                   <span key={s} className={`px-3 py-1.5 rounded-full text-xs font-medium border ${i % 2 === 0 ? "bg-primary/5 text-primary border-primary/10" : "bg-accent/5 text-accent border-accent/10"}`}>{s}</span>
                 ))}
               </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-bold text-charcoal">Starting from</span>
-                <span className="text-4xl font-bold text-accent">$20</span>
-                <span className="text-gray-400">/month</span>
-              </div>
+              <p className="text-sm text-gray-500 italic">
+                Pricing is based on fleet size.{" "}
+                <Link href="/contact" className="text-accent hover:underline font-medium">Contact us</Link>{" "}
+                for a custom quote.
+              </p>
             </div>
           </FadeIn>
 
@@ -372,7 +372,7 @@ const reasons = [
   { icon: Eye, title: "Real-Time Insights", description: "Monitor vehicle locations and fuel usage with live data, updated every few seconds." },
   { icon: Droplets, title: "Fuel Theft Prevention", description: "Detect unauthorized fuel usage and drain events instantly with precision drop sensors." },
   { icon: HeadphonesIcon, title: "Support 24/7", description: "Expert help anytime — our dedicated team assists with setup, troubleshooting, and optimization." },
-  { icon: DollarSign, title: "Competitive Pricing", description: "Flexible options for all business sizes. Starting from just $20/month per vehicle." },
+  { icon: DollarSign, title: "Competitive Pricing", description: "Flexible options for all business sizes. Pricing is based on fleet size — contact us for a custom quote." },
 ];
 
 function WhyChooseUs() {
