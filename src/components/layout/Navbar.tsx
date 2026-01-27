@@ -1,5 +1,6 @@
 "use client";
 
+
 import Link from "next/link";
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from "react";
@@ -40,11 +41,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
@@ -69,11 +69,10 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${
-                      scrolled
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${scrolled
                         ? "text-gray-600 hover:text-accent hover:bg-accent/5"
                         : "text-gray-200 hover:text-white hover:bg-white/10"
-                    }`}
+                      }`}
                   >
                     {link.label}
                     <ChevronDown className="w-3.5 h-3.5" />
@@ -104,11 +103,10 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    scrolled
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${scrolled
                       ? "text-gray-600 hover:text-accent hover:bg-accent/5"
                       : "text-gray-200 hover:text-white hover:bg-white/10"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -128,19 +126,17 @@ export function Navbar() {
               href="https://app.fantracker.net"
               target="_blank"
               rel="noopener noreferrer"
-              className={`hidden sm:inline-flex items-center px-4 py-2.5 text-sm font-semibold rounded-xl border transition-all ${
-                scrolled
+              className={`hidden sm:inline-flex items-center px-4 py-2.5 text-sm font-semibold rounded-xl border transition-all ${scrolled
                   ? "border-gray-200 text-gray-700 hover:border-accent hover:text-accent"
                   : "border-white/20 text-white hover:bg-white/10"
-              }`}
+                }`}
             >
               Login
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
-                scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
-              }`}
+              className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                }`}
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
