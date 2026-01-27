@@ -28,7 +28,7 @@ export function Footer() {
     <footer className="bg-charcoal text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-16 border-b border-white/10">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
@@ -93,6 +93,23 @@ export function Footer() {
               </ul>
             </div>
           ))}
+
+          {/* Zimbabwe Office */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-6">
+              Zimbabwe
+            </h3>
+            <a
+              href="https://fantracker.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-accent transition-colors flex items-center gap-1.5"
+            >
+              <MapPin className="w-4 h-4 text-accent shrink-0" />
+              Visit Zimbabwe Office
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
         </div>
 
         {/* Bottom Bar */}

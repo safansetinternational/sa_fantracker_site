@@ -10,6 +10,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/logo_fantracker.png",
+    apple: "/logo_fantracker.png",
+  },
   title: "FanTracker — Real. Ultimate. Control. | Vehicle & Fleet Tracking",
   description:
     "24/7 real-time vehicle tracking, fuel monitoring, fleet management & video telematics. Trusted by 3,000+ clients across 20+ countries.",
