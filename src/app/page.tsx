@@ -159,18 +159,42 @@ function LiveDashboard() {
   );
 }
 
+/* ─── Hero background images ─── */
+const heroImages = [
+  "/images/scania_1.jpeg",
+  "/images/scania_3.jpeg",
+  // "/images/trackin_2-300x200.jpg",
+  // "/images/yellow_machine_1-300x200.jpeg",
+];
+
 /* ─── HERO ─── */
 function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setCurrentImage((p) => (p + 1) % heroImages.length), 5000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section className="relative min-h-screen overflow-hidden flex items-center">
-      {/* Rich layered background */}
-      <div className="absolute inset-0 bg-charcoal" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_20%_80%,rgba(34,101,2,0.3),transparent)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_20%,rgba(254,176,57,0.15),transparent)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(254,176,57,0.05),transparent_70%)]" />
+      {/* Auto-changing background images */}
+      {heroImages.map((src, i) => (
+        <motion.div
+          key={src}
+          className="absolute inset-0"
+          initial={false}
+          animate={{ opacity: i === currentImage ? 1 : 0 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={src} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        </motion.div>
+      ))}
 
-      {/* Animated grain / noise overlay for texture */}
-      <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjgiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')]" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-charcoal/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-charcoal/30" />
 
       {/* Floating orbs */}
       <motion.div className="absolute top-20 left-[10%] w-2 h-2 rounded-full bg-accent/40" animate={{ y: [0, -20, 0], opacity: [0.4, 1, 0.4] }} transition={{ duration: 4, repeat: Infinity }} />
