@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "vehicle tracking, fleet management, GPS tracking, fuel monitoring, speed limiting, video telematics, driver behavior",
   openGraph: {
     title: "FanTracker — Real. Ultimate. Control.",
+
     description:
       "Cutting-edge vehicle tracking and fleet management solutions with unmatched reliability.",
     type: "website",
