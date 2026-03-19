@@ -2,6 +2,7 @@
 
 import {
   MapPin, Fuel, Gauge, Video, Truck, Thermometer, BarChart3, Radar, CheckCircle, ArrowRight,
+  Shield,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -51,7 +52,7 @@ const services = [
     description:
       "Restrict vehicle speed to approved limits, ensuring full compliance with local and international transport laws with tamper detection and secure installation.",
     features: [
-      "SAZ-approved devices",
+      "Approved devices",
       "Configurable speed thresholds",
       "Tamper-proof installation",
       "Speed violation reports",
@@ -75,6 +76,22 @@ const services = [
       "Dispatch management",
     ],
   },
+{
+id: "remote-immobiliser",
+icon: Shield,
+title: "Remote Immobiliser",
+subtitle: "Instant Vehicle Security",
+description:
+"Advanced anti-theft technology that allows you to remotely disable your vehicle's engine in real-time. Complete peace of mind with geofencing alerts, unauthorized movement detection, and instant immobilisation commands directly from your smartphone.",
+features: [
+"Real-time engine kill switch",
+"Geofencing & movement alerts",
+"Instant smartphone control",
+"Unauthorized start prevention",
+"Tamper-proof hardware",
+"Emergency override protocols",
+],
+},
   {
     id: "video-telematics",
     icon: Video,

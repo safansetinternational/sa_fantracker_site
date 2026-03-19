@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   description:
     "24/7 real-time vehicle tracking, fuel monitoring, fleet management & video telematics. Trusted by 3,000+ clients across 20+ countries.",
   keywords:
-    "vehicle tracking, fleet management, GPS tracking, fuel monitoring, speed limiting, video telematics, driver behavior",
+    "FANtracker,vehicle tracking, fleet management, GPS tracking, fuel monitoring, speed limiting, video telematics, driver behavior",
   openGraph: {
     title: "FanTracker — Real. Ultimate. Control.",
 
     description:
       "Cutting-edge vehicle tracking and fleet management solutions with unmatched reliability.",
     type: "website",
-    url: "https://fantracker.net",
+    url: "https://fantracker.co.za",
   },
 };
 

@@ -79,7 +79,7 @@ function LiveDashboard() {
             <div className="w-3 h-3 rounded-full bg-accent" />
             <div className="w-3 h-3 rounded-full bg-primary" />
           </div>
-          <span className="text-xs text-white/40 font-mono">app.fantracker.net</span>
+          <span className="text-xs text-white/40 font-mono">app.fantracker.co.za</span>
           <div className="flex items-center gap-1.5">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             <span className="text-[10px] text-primary font-medium">LIVE</span>
@@ -222,7 +222,7 @@ function Hero() {
             </motion.h1>
 
             <motion.p className="mt-6 text-lg text-gray-400 leading-relaxed max-w-lg" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
-              We specialize in cutting-edge tracking solutions including fuel
+              FANTRACKER specializes in cutting-edge tracking solutions including fuel
               monitoring, vehicle tracking, speed limiting, trailer tracking,
               stolen vehicle recovery, and video telematics with real-time
               monitoring and enhanced security.
@@ -267,8 +267,8 @@ function Hero() {
 const primaryServices = [
   { icon: MapPin, title: "Vehicle Tracking", description: "24-hour vehicle monitoring service that is customised for you.", href: "/services#vehicle-tracking" },
   { icon: Fuel, title: "Fuel Monitoring", description: "Every drop that drips out of your tank can be detected by our drop sensors.", href: "/services#fuel-monitoring" },
-  { icon: Gauge, title: "Speed Limiting", description: "SAZ approved device that limits speed for your vehicles.", href: "/services#speed-limiting" },
-  { icon: Truck, title: "Trailer Tracking", description: "Trailer tracking devices can sustain for a lifetime without losing connectivity.", href: "/services#trailer-tracking" },
+  { icon: Gauge, title: "Speed Limiting", description: "Approved device that limits speed for your vehicles.", href: "/services#speed-limiting" },
+  { icon: Shield, title: "Remote Immobiliser", description: "Remotely disable your vehicle's engine in real-time and receive instant security alerts, all from your smartphone.", href: "/services#remote-immobiliser" },
 ];
 
 function ServicesOverview() {
@@ -301,7 +301,7 @@ function ServicesOverview() {
         </div>
         <div className="mt-12 text-center">
           <Button href="/services" variant="outline" size="md">
-            View All 8 Services <ArrowRight className="w-4 h-4" />
+            View All 9 Services <ArrowRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
